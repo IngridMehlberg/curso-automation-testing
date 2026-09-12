@@ -5,16 +5,16 @@ Como ser: Sumar(), Restar(), Multiplicar() y Dividir()
 Añadir manejo de excepciones para entradas inválidas y división por cero.
 """
 
-def Sumar(valor1, valor2):
+def sumar(valor1, valor2):
     return valor1 + valor2
 
-def Restar(valor1, valor2):
+def restar(valor1, valor2):
     return valor1 - valor2
 
-def Multiplicar(valor1, valor2):
+def multiplicar(valor1, valor2):
     return valor1 * valor2
 
-def Dividir(valor1, valor2):
+def dividir(valor1, valor2):
     if valor2 == 0:
         # Lo que hace raise es lanzar una excepción y cortar la ejecución de la función.
         raise ZeroDivisionError("No se puede dividir por cero")
@@ -27,13 +27,13 @@ def calculadora():
         num2 = float(input("Segundo numero: "))
         opcion = input("Indique 1) Sumar  2) Restar  3) Multiplicar  4) Dividir ")
         if opcion == "1":
-            resultado = Sumar(num1,num2)
+            resultado = sumar(num1,num2)
         elif opcion == "2": 
-            resultado = Restar(num1,num2)
+            resultado = restar(num1,num2)
         elif opcion == "3": 
-            resultado = Multiplicar(num1,num2)
+            resultado = multiplicar(num1,num2)
         elif opcion == "4": 
-            resultado = Dividir(num1,num2)
+            resultado = dividir(num1,num2)
         else:
             print("Opcion invalida")
         return print(f"Resultado: {resultado}")
