@@ -21,6 +21,7 @@ def Dividir(valor1, valor2):
     return valor1 / valor2
 
 def calculadora():
+    """Ejecuta la calculadora interactiva y maneja las entradas del usuario."""
     try:    
         num1 = float(input("Primer numero: "))
         num2 = float(input("Segundo numero: "))
